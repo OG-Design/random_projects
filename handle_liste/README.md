@@ -1,5 +1,28 @@
 # Handle Liste App
 
+ 
+## **Dependencies / Avhengigheter**
+#### 1. Docker Engine 
+#### 2. Vite - React TS
+#### 3. Node.js
+
+## **Bruk**
+
+```bash
+# run
+docker compose up
+
+# debug / change
+docker compose watch # auto compile per change
+
+# build project
+docker compose build # compile
+
+# build <stage>
+docker compose build client # client = <stage>
+
+```
+
 ## Mål
 Lage en app som gjør handling lettere.
 
@@ -55,11 +78,6 @@ Lage en app som gjør handling lettere.
 
 
 ## **Generel info**
-### **Dependencies / Avhengigheter**
-#### 1. Vite - React TS
-#### 2. Node.js
-#### 3. Better-SQLite-3
-
 ### **Hoved mapper**
 #### 1. backend
 #### 2. frontend

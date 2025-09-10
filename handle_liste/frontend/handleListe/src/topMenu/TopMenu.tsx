@@ -8,7 +8,6 @@ function TopMenu() {
   return (
     <>
         <menu id='TopMenu'>
-            <button><img src="#" alt="friends button"/></button>
         </menu>
     </>
   )
