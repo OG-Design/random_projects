@@ -326,3 +326,44 @@ $transition: .1s
     padding-top: $padding_top
 
     background-color: $secondary1_dark 
+
+    display: flex
+    flex-direction: column
+
+    .create_button
+        width: 70px
+        height: 70px
+        
+        font-family: Inter
+        font-size: 100px
+        
+        
+
+        border: none
+        border-radius: $border_radius1
+
+        background-color: $primary2_bright
+        color: $accent1_normal1
+        // text-shadow: $textShadow
+        box-shadow: $boxShadow
+        
+        
+        // alignment
+        padding: 0
+        line-height: 0
+        padding-bottom: 15px
+        margin: 10px 
+        
+        position: fixed
+        bottom: 0
+        right: calc( 50% - 35px )
+
+        transition: $transition
+
+        &:hover
+            transform: translate(0, -5px) scale(1.05)
+        &:active
+            transform: translate(0, 5px) scale(.95)
+            
+        
+        
