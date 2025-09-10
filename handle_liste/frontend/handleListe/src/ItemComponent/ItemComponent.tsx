@@ -8,7 +8,7 @@ type ItemComponentProps = {
     cost?: number
 }
 
-function ItemComponent({checked = false, content}: ItemComponentProps) {
+function ItemComponent({checked = false, content, cost}: ItemComponentProps) {
   const [count, setCount] = useState(0)
 
   return (
@@ -19,7 +19,8 @@ function ItemComponent({checked = false, content}: ItemComponentProps) {
             ✓
         </button>
         <div className='item_right'>
-            <div className='item_text'>{content? content : ''}</div>
+            <div className={checked ? 'item_text_checked' : 'item_text'}><p>{content? content : ''}</p></div>
+            <div className="item_price">kr {cost},-</div>
         </div>
       </li>
     </>

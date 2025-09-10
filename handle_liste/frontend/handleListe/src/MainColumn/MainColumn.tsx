@@ -15,7 +15,7 @@ function MainColumn() {
             <ListComponent title='List title' content={[
               {content: 'Bread', cost: 30, checked: true},
               {content: 'Butter', cost: 30, checked: false},
-              {content: 'Ketchup', cost: 40, checked: false}
+              {content: 'Peperoni pizza with real tomatoes', cost: 40, checked: false}
             ]}/>
       </main>
     </>

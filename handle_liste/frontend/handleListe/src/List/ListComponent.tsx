@@ -56,7 +56,7 @@ function ListComponent({title, content}: ListComponentProps) {
           {
             // content(checks undefined) && content.map
             content && content.map((item, idx) => (
-              <ItemComponent key={idx} content={item.content} checked={item.checked}/>
+              <ItemComponent key={idx} content={item.content} checked={item.checked} cost={item.cost}/>
             ))
           }
         </ul>
