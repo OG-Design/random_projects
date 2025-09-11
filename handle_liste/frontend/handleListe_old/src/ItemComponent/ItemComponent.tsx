@@ -14,13 +14,20 @@ function ItemComponent({checked = false, content, cost}: ItemComponentProps) {
   return (
     <>
       <li className='item'>
-        {/* changes class based on checked if(checked=true){add ed to 'item_check'} */}
+        {
+          /* changes class based on checked: bool 
+          if ( checked is true ) { 
+            add class item_checked 
+          } else {
+            add class item_check
+          } */
+        }
         <button className={`${checked ? 'item_checked': 'item_check'}`}>
             ✓
         </button>
         <div className='item_right'>
-            <div className={checked ? 'item_text_checked' : 'item_text'}><p>{content? content : ''}</p></div>
-            <div className="item_price">kr {cost},-</div>
+            <div className='item_text'>{content? content : ''}</div>
+            <div className='item_price'>kr {cost},-</div>
         </div>
       </li>
     </>

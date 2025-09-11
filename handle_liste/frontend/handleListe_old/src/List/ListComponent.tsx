@@ -20,12 +20,12 @@ import ItemComponent, {ItemComponentChecked} from '../ItemComponent/ItemComponen
 // }
 
 type ItemType = {
-  content: string
+  name: string
   cost: number
   checked?: boolean
 }
 
-type ListComponentProps = {
+export type ListComponentProps = {
   title?: string
   content?: ItemType[]
 }
@@ -49,14 +49,14 @@ function ListComponent({title, content}: ListComponentProps) {
     <>
       <ul className='ListComponent'>
         <div className='list_title'>
-            <h1>{title? title : ''}</h1>
+            <input placeholder={title? title : ''}></input>
 
         </div>
         <ul className='item_area'>
           {
             // content(checks undefined) && content.map
             content && content.map((item, idx) => (
-              <ItemComponent key={idx} content={item.content} checked={item.checked} cost={item.cost}/>
+              <ItemComponent key={idx} content={item.name} checked={item.checked} cost={item.cost}/>
             ))
           }
         </ul>
