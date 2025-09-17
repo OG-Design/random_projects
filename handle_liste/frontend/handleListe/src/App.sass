@@ -1,6 +1,73 @@
+
+  
 #root 
-  max-width: 100%;
+  // GLOBAL VARIABLES
+  // ANIMATION
+  $transition: .3
+
+  // SHADING 
+  $boxShadow: 0px 5px 16px 1px hsla(0, 100%, 0%, .3)
+  $textShadow: 1px 2px 3px hsla(0, 100%, 0%, .5)
+  $textShadow_strong: 1px 2px 3px hsla(0, 100%, 0%, 1)
+
+  // HEADER
+  // HEADER GRADIENT  
+  // PROPERTIES
+    
+  // OPT: DIFFERENCE - adds value hue to gradient end
+  $color_gradient_hue_difference: 24
+  
+  // OPT: INITIAL HUE - value adds hue to gradient start
+  $color_gradient_hue_1: 199 
+  $color_gradient_hue_2: calc( $color_gradient_hue_1 + $color_gradient_hue_difference)
+
+  // OPT: GRADIENT COLORS - gradient_0 > start of gradient, gradient_1 > end of gradient
+  $color_primary_0_gradient_0: rgba($color_gradient_hue_1, 212, 241, 1)
+  $color_primary_0_gradient_1: rgba($color_gradient_hue_2, 229, 241, 1)
+  
+  // OPT: GRADIENT - deg > rotation, 0% > first pos of value, 100% > last pos of value
+  $header_color_gradient: linear-gradient(0deg, $color_primary_0_gradient_0 0%, $color_primary_0_gradient_1 100%)
+
+  // CHECKMARK
+  // PROPERTIES
+  $checkmark_color_muted: hsla(0, 0%, 30%, 1)
+
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
+
+  #header
+    width: 100%
+    height: 100px
+    background: $header_color_gradient
+  
+  .checkmark
+    width: 40px
+    height: 26px
+    background-color: transparent
+    color: $checkmark_color_muted
+    font-size: 48px
+    font-weight: 200
+
+    line-height: 20px
+    border: none
+    font-family: Inter
+
+    transition: $transition ease-in-out
+
+    -webkit-text-stroke-width: 2px
+    -webkit-text-stroke-color: $checkmark_color_muted 
+    stroke: solid
+    stroke-width: 1px
+
+    text-shadow: $textShadow
+
+    &:hover
+        transform: translate(0, -2px)                
+        text-shadow: $textShadow_strong
+    &:active
+        transform: translate(0, 1px) scale(.98)
+        text-shadow: $textShadow
+
 

@@ -1,42 +1,109 @@
-# Frontend application
-This apps goal is to make a functional local app, as well as making an option to register an account and login for cloud sync and easy sharing in a format the app understands.
+# React + TS project plan
 
-## **UI**
+---
 
-### Top menu
-    Content:
-        -   Friends button(activates FriendsComponent)
-        -   Login button(activates LoginComponent)
+## 1. Project Overview
+- **name:** HandleListe
+- **goal:**
+- **Target users:**
+- **Key features:**
+- [ ] List/s
+- [ ] Item/s
+- [ ] Get, Edit, Delete Item's, List's
 
-### Main column(lists)
-    Content:
-        -   All lists
-        -   Search-bar with filter-ability
-### List component
-    Content:
-        -   Author username
-        -   Title of list
-        -   List completion percentage
-        -   Each item
-        -   Delete button(deletes list(asks are you sure?))
-        -   Share button(opens some dialog to share + filetype/in-app share)
-### Item component
-    Content:
-        -   Content
-        -   Price
-        -   Checkmark (checked/unchecked)
-### Login component
-    Content:
-        -   Email input
-        -   Password input
-        -   Submit button(submits login form)
-        -   Register link(opens register component)
-### Settings component
-    Content:
-        -   Account settings component
-### Account settings components
-    Content:
-        -   Display name change
-        -   Email change
-        -   Password change
-        -   Logout button(submits logout form)
+---
+
+## 2. Tech Stack
+- **Frontend:** React + TypeScript
+- **State Management:** React's state management
+- **UI Library:** Custom
+- **Routing:** If used, React Router
+- **Build Tooling:** Vite
+- **Other Tools:** 
+
+---
+
+## 3. Architecture & Main Folders 
+```bash
+src/
+
+components/ # Reusable ui elements
+
+pages/  # Route based traffic
+
+features/ # Feature-specific logic and components
+
+hooks/ # Custom hooks
+
+context/ # Global state/context
+
+services/ # API calls, external services
+
+types/ # Typescript types/interfaces
+
+utils/ # Helper functions
+
+assets/ # Images, fonts, etc
+```
+
+---
+
+## 4. Data and API Plan
+- **Data Sources:**
+- **API Endpoints:**
+- **Types/Interfaces:**
+- **Error Handling Strategy:**
+- **Caching/State Strategy:**
+
+---
+
+## 5. UI/UX Wireframes/Designs
+- **Design Tools:** Figma
+- **Screen to Design:**
+- [ ] HomeScreen
+- [ ] Settings
+- [ ] Login
+
+
+## 6. Feature Breakdown & Roadmap
+### MVP
+- [x] Setup Project with React, TS, ESLint, Prettier
+- [ ] Home Design implementation in components
+    - [ ] List Component Type Props
+    - [ ] Item files
+        | Location | Name | functional? |
+        | :--- | :---: | ---: | 
+        | /components | Item.tsx | no |
+        | /types | itemProps.ts | no |
+    - [ ] Checkmark files
+        
+        | Location | Name | functional? |
+        | :--- | :---: | ---: | 
+        | /components | Checkmark.tsx | no |
+        | /types | checkmark.ts | no |
+- [ ] Create Basic Routing (Home, Settings)
+- [ ] Implementation of Authentication
+
+### Phase 2.
+- [ ] Connect API and Display Data
+- [ ] 
+
+### Phase 3.
+- [ ] Add offline support
+- [ ] Refine UI and Animations
+- [ ] Performance Optimitation
+
+---
+
+## 7. Testing Plan
+
+---
+
+## 8. Deployment Plan
+- **Hosting Plan:** Self Host
+- **CI/CD:** 
+- **Enviroment Variables:**
+
+## 9. Maintenence
+- **Code Style & linting:** 
+- **Git Workflows:**

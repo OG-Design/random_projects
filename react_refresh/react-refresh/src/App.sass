@@ -1,0 +1,38 @@
+
+
+@font-face 
+    font-family: Inter;
+    src: url('./font/Inter/Inter-VariableFont_opsz,wght.ttf');
+
+
+.card
+    $card_bg_1: hsla(255, 25%, 80%, 1)
+    $code_area_bg: hsla(255, 25%, 15%, 1)
+    
+    $code_text_bg: hsla(255, 25%, 95%, .1)
+    $code_text_bg_1: hsla(255, 25%, 15%, 1)
+    $code_text_fg: hsla(255, 20%, 80%, 1)
+
+    width: 100%
+    height: fit-content
+
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    background-color: $card_bg_1
+
+    h1
+        font-family: Inter
+        font-weight: bold
+    
+    .example
+        background-color: $code_area_bg
+        color: $code_text_fg
+        pre
+            background-color: $code_text_bg
+            white-space: pre-wrap
+            code
+                width: 100%
+                background-color: $code_text_bg_1 

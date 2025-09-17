@@ -33,6 +33,6 @@ fn fibonacci (n:usize) {
 fn main() {
 
 
-    fibonacci(14);
+    fibonacci(1400);
 
 }

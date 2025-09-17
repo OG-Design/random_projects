@@ -27,7 +27,7 @@ type ItemType = {
 
 export type ListComponentProps = {
   title?: string
-  content?: ItemType[]
+  content?: string
 }
 
 
