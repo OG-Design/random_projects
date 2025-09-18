@@ -1,28 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import '../App.sass'
+import type { item } from '../types/item'
+import Checkmark from './Checkmark'
+import type { ChangeEvent } from 'react'
 
-
-type Item = {
-    label: string,
-    price: number,
-    checkmark: boolean
+type ItemChange = Partial<Pick<item, 'label' | 'price' | 'marked'>>
+type ItemProps = item & {
+  onChange: (id: item['id'], changes: ItemChange) => void
 }
 
-function Item({}: Item) {
-    const [count, setCount] = useState(0)
+function Item({ id, label, price, marked, onChange }: ItemProps) {
+  const onLabelChange = (e: ChangeEvent<HTMLInputElement>) =>
+    onChange(id, { label: e.target.value })
 
-    return (
-        <>
-            <ul className='item'>
-            <button className='checkmark'></button>
-            <input className='label' type="text"/>
-            <input className='price' type="number"/>
+  const onPriceChange = (e: ChangeEvent<HTMLInputElement>) =>
+    onChange(id, { price: e.target.valueAsNumber })
 
-            </ul>
-        </>
-    )
+  const onToggleMarked = () =>
+    onChange(id, { marked: !marked })
+
+  return (
+    <>
+      <ul className='item'>
+        <button onClick={onToggleMarked}>
+          <Checkmark marked={marked} />
+        </button>
+        <input className='label' type="text" defaultValue={label} onChange={onLabelChange}/>
+        <input className='price' type="number" defaultValue={price} onChange={onPriceChange}/>
+      </ul>
+    </>
+  )
 }
 
 export default Item

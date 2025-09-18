@@ -1,0 +1,12 @@
+[
+    {
+        "title":"Some title for a list",
+        "items":[
+            {
+                "label":"Random expense",
+                "price":"20",
+                "marked":"false"
+            }
+        ]
+    }
+]

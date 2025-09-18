@@ -1,24 +1,32 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import '../App.sass'
+import Item from './Item'
+import type { listProps } from '../types/list'
+import type { item } from '../types/item'
 
+function List({ title, items, onAddItem, onItemChange }: listProps) {
+  const handleClick = () => onAddItem()
 
-type Item = {
-    label: string,
-    price: number,
-    checkmark: boolean
-}
-
-function List({}: Item) {
-  const [count, setCount] = useState(0)
-
+  // render list
   return (
     <>
       <ul className='list'>
-        <h1>title</h1>
+        <h1>{title}</h1>
         <ul>
-          <Item/>
+          {/* render items */}
+          {items.map((it: item, index: number) => {
+            
+            return (
+              <Item 
+              key={it.id ?? index} 
+              label={it.label} 
+              price={it.price} 
+              marked={it.marked} 
+              id={it.id} 
+              onChange={onItemChange}/>
+            )
+          })}
+          <button onClick={handleClick}>Add item</button>
         </ul>
       </ul>
     </>

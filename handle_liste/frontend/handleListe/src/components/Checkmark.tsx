@@ -3,29 +3,19 @@ import '../App.sass'
 
 import type { checkmark } from '../types/checkmark'
 
-function Item({marked}: checkmark) {
-    const [check_check, set_check_check] = useState(marked)
-    function set_check() {
-        
-        set_check_check(prev => {
-            const next = !prev
-            console.log('toggle check: ', next)
-            
-            return next
-        })
-        
-    }
-        
+function Checkmark({marked}: checkmark) {
     
+    const className = marked ? 'checkmark is_checked': 'checkmark'
+
     return (
         <>
             
-            <button className='checkmark' onClick={set_check}>
+            <span className={className}>
                 ✓
-            </button>
+            </span>
             
         </>
     )
 }
 
-export default Item
+export default Checkmark
