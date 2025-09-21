@@ -1,4 +1,3 @@
-import { useState } from 'react'
 
 type links = {
   link: string,
@@ -12,12 +11,11 @@ type CardProps = {
 }
 
 function Card({link}: CardProps) {
-  const [count, setCount] = useState(0)
 
   return (
     <>
         {link.map((item, index) => (
-          <li className='card' key={item.img}>
+          <li className='card' key={index}>
             <a href={item.link}>
             <img src={item.img} alt={item.alt} />
             <h3>{item.title}</h3>
