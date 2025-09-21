@@ -1,0 +1,14 @@
+[
+    {"link": "https://www.google.com", "img": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png", "alt": "Google", "title": "Google"},
+    {"link": "https://www.facebook.com", "img": "https://www.facebook.com/images/fb_icon_325x325.png", "alt": "Facebook", "title": "Facebook"},
+    {"link": "https://www.twitter.com", "img": "https://abs.twimg.com/icons/apple-touch-icon-192x192.png", "alt": "Twitter", "title": "Twitter"},
+    {"link": "https://www.linkedin.com", "img": "https://static-exp1.licdn.com/sc/h/8ekq8gho1ruaf8i7f86vd1ftt", "alt": "LinkedIn", "title": "LinkedIn"},
+    {"link": "https://www.instagram.com", "img": "https://instagram.com/static/images/ico/favicon-200.png/ab6eff595bb1.png", "alt": "Instagram", "title": "Instagram"},
+    {"link": "https://www.youtube.com", "img": "https://www.youtube.com/s/desktop/6b4e5c7c/img/favicon_144.png", "alt": "YouTube", "title": "YouTube"},
+    {"link": "https://www.wikipedia.org", "img": "https://www.wikipedia.org/static/apple-touch/wikipedia.png", "alt": "Wikipedia", "title": "Wikipedia"},
+    {"link": "https://www.amazon.com", "img": "https://m.media-amazon.com/images/G/01/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405936794_.png", "alt": "Amazon", "title": "Amazon"},
+    {"link": "https://www.netflix.com", "img": "https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico", "alt": "Netflix", "title": "Netflix"},
+    {"link": "https://www.stackoverflow.com", "img": "https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-logo.png?v=d4d3fcbcf38d", "alt": "Stack Overflow", "title": "Stack Overflow"},
+    {"link": "https://www.github.com", "img": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png", "alt": "GitHub", "title": "GitHub"},
+    {"link": "https://www.reddit.com", "img": "https://www.redditinc.com/assets/images/site/reddit-logo.png", "alt": "Reddit", "title": "Reddit"}
+]
