@@ -5,6 +5,9 @@ export type list = {
     items: item[]
 }
 export type listProps = list & {
+    saveLocal: () => {
+        
+    }
     onAddItem: () => void
     onItemChange: (id: item['id'], patch: Partial<item>) => void
 }
